@@ -1,0 +1,41 @@
+/*div to hold all inner divs of a single tool*/
+.toolbox_tool {
+	border: 2px solid black;
+	border-radius: 2%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left:2px;
+	margin-right: 2px;
+}
+
+/* Div to hold text portion of tool*/
+.toolbox_text_div {
+	display: inline-block;
+	width: 75%;		
+}
+
+/* Title of Tool*/
+.toolbox_text_div h2{
+	display: block;
+	margin-bottom: 2px;
+}
+
+/*Description of tool*/
+.toolbox_text_div p{
+	text-align: left;
+}
+
+/* Div to hold image portion of tool*/
+.toolbox_pic {
+  height: 100px;
+  width: 25%;
+  display: inline-block;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+/* Image of Tool*/
+.toolbox_pic img{
+  height: 100%;
+  width: 100%;
+}

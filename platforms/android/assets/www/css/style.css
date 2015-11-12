@@ -1,0 +1,98 @@
+body{
+	margin:0;
+	font-family:Roboto,Helvetica,sans-serif;
+}
+
+a{
+	color:#000;
+	text-decoration:none;
+	font-size:2em;
+}
+
+.screen{
+	width:100%;
+	height:90%;
+	margin-top:-1em;
+}
+
+.screen-title{
+	text-align:center;
+	text-transform:uppercase;
+	font-size:2.5em;
+}
+
+.screen-content{
+	margin-top:-1.5em;
+}
+
+.picture{
+	border:2px solid #000;
+}
+
+/* Toolbar */
+
+#menu-bar{
+	padding:0;
+	margin:0;
+	border-bottom:2px solid black;
+	width:100%;
+	height:5%;
+	/*background:#acacac;*/
+}
+
+#app-name{
+	text-transform:uppercase;
+	margin:0.5em;
+	text-align:left;
+	/*font-style:italic;*/
+}
+
+/* CSS for Toolbox Page */
+
+#toolbox-screen{
+	display:inline;
+	background:#fff;
+}
+
+.toolbox{
+	padding:0;
+	font-size:1.5em;
+	text-align:center;
+	width:100%;
+	list-style-type:none;
+	background-repeat:no-repeat;
+}
+
+.toolbox-tool{
+	position:relative;
+	margin-top:-1.1em;
+	height:25vh;
+}
+
+.tool-options{
+	position:absolute;
+	right:0.5em;
+	bottom:0.5em;
+}
+
+.tool-button{
+	background:#fff;
+	border:2px solid #000;
+	font-size:.3em;
+	border-radius:0.5em;
+	width:4em;
+	padding:0.5em;
+	display:inline;
+}
+
+#brainwriting{
+	background-image:url("../img/brainwriting.jpg");
+	background-repeat:no-repeat;
+}
+
+#mind-map{
+	background-image:url("../img/mind-map.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100%;
+}

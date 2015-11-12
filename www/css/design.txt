@@ -1,0 +1,24 @@
+*****************************************
+HEX VALUES & DESIGN TIPS/GUIDELINES
+*****************************************
+Empathy -> #35b7e5
+Define -> #66cc70
+Ideate -> #e5d36a
+Prototype -> #e2915a
+Test -> #b54747
+
+Step title color -> #fff
+	* Step title font weight is BOLD and UPPERCASE
+Content text color -> #7c7c7c
+	* Content font weight is LIGHT
+
+Highlighted text color corresponds to color of the current step
+	* Highlighted font weight is BOLD
+
+Future step (on bar) background -> #494948
+Future step (on bar) number color -> #919191
+
+Map (main text background) -> #e8e3d1
+Flap (next arrow background) -> #d1c6ae
+	* To make triangle shape: https://css-tricks.com/snippets/css/css-triangle/
+Next Page (underneath flap) -> #d8d1bf

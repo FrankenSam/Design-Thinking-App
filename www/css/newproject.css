@@ -1,0 +1,95 @@
+#create_project {
+    /* some styles to position the modal at the center of the page */
+    position: absolute;
+    top: 28%;
+    left: 5%;
+    width: 90%;
+    line-height: 180px;
+    height: 180px;
+    background-color: #ffffff;
+    text-align: top;
+    border-radius: 1px;
+    min-height: 180px;
+    display: none;
+
+    /* needed styles for the overlay */
+    z-index: 2; /* keep on top of other elements on the page */
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+}
+
+
+#project_name_header {
+  position: static;
+  width: 90%;
+  text-align: left;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 auto;
+}
+
+#project_name_exit {
+  display: inline-block;
+  position: fixed;
+  font-weight: bold;
+  font-size: 20px;
+  border: 0.1px solid #5bc0d8;
+  color: white;
+  width: 30px;
+  height: 35px;
+  right: 5%;
+}
+
+.project_name_text {
+  font-size: 5vw;
+  margin-left: 3%;
+}
+
+#project_name_form {
+  position: static;
+  margin-top: -5px;
+  margin-left: 5%;
+  text-align: left;
+  height: 23px;
+  line-height:23px;
+  margin-bottom: 20px;
+}
+
+#overlay_start {
+  position: relative;
+  height: 45px;
+  width: 100px;
+  margin: 0 auto;
+  background-color: #ea6868;
+  border-radius: 9px;
+  border: 1px solid #ea6868;
+  box-shadow: 0px 4px 0px -1px #ce5f5f;
+  vertical-align: middle;
+  color: white;
+  line-height: 15px;
+}
+
+#new_project_bar {
+  position: static;
+  text-align: left;
+  top:0%;
+  width: 100%;
+  height: 40px;
+  color: #ffffff;
+  background-color: #5bc0d8;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+#new_project_text {
+  display: inline-block;
+  position: static;
+  width: 50vw;
+  font-size: 4.5vw;
+}
+
+#project_name_text_form {
+  width: 250px;
+  height: 23px;
+  border-radius: 3px;
+  box-shadow: 0 0 #000000;
+}

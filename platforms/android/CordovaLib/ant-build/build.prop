@@ -1,0 +1,15 @@
+#Last build type
+#Fri, 08 May 2015 15:03:51 -0700
+<<<<<<<=HEAD
+#Tue, 05 May 2015 22:38:04 -0700
+=\=\=\=\=\=\=
+#Fri, 01 May 2015 15:31:52 -0700
+>>>>>>>=02cef242da3dc8d794f58a3509991566d9763219
+
+build.last.target=debug
+
+build.last.is.instrumented=false
+
+build.last.is.packaging.debug=true
+
+build.last.is.signing.debug=true

@@ -1,0 +1,53 @@
+#overlay_whatis_container {
+    /* some styles to position the modal at the center of the page */
+    display: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translate(-50%);
+    transform: translateY(-50%);
+    left: 5%;
+    width: 90%;
+    height: 60%;
+    background-color: #ffffff;
+    text-align: top;
+    border-radius: 3vw;
+
+    /* needed styles for the overlay */
+    z-index: 2; /* keep on top of other elements on the page */
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+}
+
+#whatis_content_container {
+  position: relative;
+  top: 7.5%;
+  left: 7.5%;
+  height: 70%;
+  width: 85%;
+  display: inline-block;
+  font-size: 5vw;
+  color: #848484;
+  margin: auto;
+  overflow: auto;
+}
+
+#whatis_button_close {
+  position: relative;
+  margin-top: 10%;
+  display: inline-block;
+  height: 45px;
+  width: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translate(-50%);
+  transform: translateX(-50%);
+  background-color: #ea6868;
+  border-radius: 9px;
+  border: 1px solid #ea6868;
+  box-shadow: 0px 4px 0px -1px #ce5f5f;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  line-height: 45px;
+  font-size: 16px;
+}

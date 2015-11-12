@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/newproject.css">
+    <link rel="stylesheet" type="text/css" href="css/openproject.css">
+    <link rel="stylesheet" type="text/css" href="css/summary.css">
+    <link rel="stylesheet" type="text/css" href="css/stepsbar.css">
+    <link rel="stylesheet" type="text/css" href="css/whatis.css">
+	<link rel="stylesheet" type="text/css" href="css/toolbox.css">
+  <link rel="stylesheet" type="text/css" href="css/progressbar.css">
+  <link rel="stylesheet" type="text/css" href="css/topbar.css">
+  <link rel="stylesheet" type="text/css" href="css/nextbutton.css">
+        <title>Design Thinking</title>
+    </head>
+    <body>
+  <!--
+    "Header bar".
+
+  -->
+    <div id="top_bar" class="top_bar_header_div">
+        <h1 style="text-align:left; color:white; font-weight:normal; font-size:3em; display:inline-block;"><img id="menu-icon" src="img/main/menu.png" />DinoThink</h1>
+  			<img id="imgProfile" style="display:none" />
+  			<div id="toolbox_content" style="display:none"></div>
+    </div>
+
+
+  <div id="topbar">
+    <div id="headerbar">
+      <img src="img/v4/main/menu-icon.png" style="position:static; width:6vw;float:left;margin-top:2vw;,margin-left:2vw;"/>
+      <div class="headerbarcontent" id="header_bar_EMPATHY">
+        <img id="header_bar_image_icon" src="img\v4\empathy\icon.png"/>
+        EMPATHY
+      </div>
+      <div class="headerbarcontent" id="header_bar_DEFINE">
+        <img id="header_bar_image_icon" src="img\v4\define\icon.png"/>
+        DEFINE
+      </div>
+      <div class="headerbarcontent" id="header_bar_IDEATE">
+        <img id="header_bar_image_icon" src="img\v4\ideate\icon.png"/>
+        IDEATE
+      </div>
+      <div class="headerbarcontent" id="header_bar_PROTOTYPE">
+        <img id="header_bar_image_icon" src="img\v4\prototype\icon.png"/>
+        PROTOTYPE
+      </div>
+      <div class="headerbarcontent" id="header_bar_TEST">
+        <img id="header_bar_image_icon" src="img\v4\test\icon.png"/>
+        TEST
+      </div>
+    </div>
+    <div id="progressbar">
+      <ul>
+        <li id="progressbar-1">1</li>
+        <li id="progressbar-2">2</li>
+        <li id="progressbar-3">3</li>
+        <li id="progressbar-4">4</li>
+        <li id="progressbar-5">5</li>
+      </ul>
+    </div>
+  </div>
+  <div id="clickable_next_button"></div>
+  <div id="next-button">
+    <div id="next-arrow-box"></div>
+    <div id="next-arrow-triangle"></div>
+    <div id="next-button-bottomflap"></div>
+  </div>
+
+
+
+
+		<!-- Startup Page -->
+    <div id="startup">
+      <img style="margin:0 auto;max-width:75%;margin-top:15%;" src="img/main/logo.png" />
+      <img style="margin:0 auto;max-width:40%;margin-top:-15%;margin-left:30%;" src="img/main/tagline.png" />
+	  
+	  <!--New/Open Project Buttons-->
+		<div style="margin-left:50%;margin-top:10%;">
+			<div id="new_project" class="main-button"><h2>New Project</h2></div>
+			<div id="open_project" class="main-button"><h2>Open Project</h2></div>
+		</div>
+		  <!--<div style="height:160px; width:80%; margin:0 auto">
+            <div id="new_project" class="page_content_button_div" style="margin-right:10%">
+                <p style="color:#848484">New Project</p>
+            </div>
+            <div id="open_project" class="page_content_button_div">
+                <p style="color:#848484">Open Project</p>
+            </div>
+          </div>-->
+	  
+      <img style="position:absolute;max-width:50%;bottom:10%;right:40%;" src="img/main/dennis.png" />
+
+		  <!-- What is Design Thinking -->
+          <div id="whatis_button" style="position:absolute; display:inline-block;width:100%;line-height:30px;height:30px;margin: 0 auto;vertical-align:middle;text-align:middle;bottom:5%;right:0%;">
+            <img style="display:inline-block;position:static;width:28px; padding-right:5px;margin-bottom:-10px" src="img/main/question.png"/>
+            <p style="position:static;margin:0;text-align:center;font-size:15px;color:#848484;border-bottom:2px dotted #848484;display:inline-block">WHAT IS DESIGN THINKING?</p>
+          </div>
+
+		  <!-- New Project Overlay-->
+            <div id="create_project" class ="overlay">
+              <div id="new_project_bar">
+                <div id="new_project_text"><img style="width:30px; height:auto; margin: 8px 10px 0 10px" src='img/new-folder-icon.png'/>New Project</div>
+                <div id="project_name_exit">X</div>
+              </div>
+              <div id="project_name_header">Project Name</div>
+              <form id="project_name_form">
+                  <input type="text" id="project_name_text_form" name="name_desc" value="New City Experience">
+              </form>
+              <div id="overlay_start"><p style="font-size:15px; vertical-align:middle">START</p></div>
+            </div>
+		</div>
+
+		  <!-- Project Selection -->
+          <div id="project_selection">
+            <div id="open_projectdiv">
+              <div style="display:inline-block;line-height:45px"><img style="width:26px; height:auto; margin: 7px 10px 0 10px" src='img/open-folder-icon.png'/>Open Project</div>
+              <div id="open_project_exit">X</div>
+            </div>
+            <div id="projects_container">
+            </div>
+            <div id="op_OK">START</div>
+          </div>
+
+	<div id="step_one_page">
+		<!-- Instructions -->
+        <div id="step_instr" class="main_content_div">
+			<div id="timer" class="main_content_div">
+				<div class = "stepPic"><img src="img/ideate/timer/1.png" id = "timer_pic" /></div>
+				<div id="start_timer" class="button_record"></div>
+				<div id = "start_timer_word" style="text-align:center"><h3>Start Timer</h3></div>
+				<div id="b_timer_done" class="page_content_button_div"><h2>Time's Up</h2></div>
+			</div>
+
+			<div id="step_top">
+            <div class = "stepPic" id="step_pic_div"><img id="step_pic" src="img/empathy.png" /></div>
+                <h1 id="step_title" class="main_content_header_text">Generic Step</h1>
+					<div class="main_content_text_div">
+						<p id="step_text" class="main_content_reg_text">Generic Text</p>
+					</div>
+			</div>
+
+			<div id="define_form" class="main_content_div">
+				<div style="margin: 0 auto 0 auto; text-align: center">
+					<form id="name">
+						<input type="text" name="name_desc">
+					</form>
+					<p style="font-size:6vw; margin: 0">needs a way to <br></p>
+					<form id="need">
+						<input type="text" name="users_need">
+					</form>
+					<p style="font-size:6vw; margin: 0">surprisingly // because // but...</p>
+					<form id="insight">
+						<input type="text" name="insight">
+					</form>
+				</div>
+			</div>
+
+
+			<div id="b_step_instr" class="page_content_button_div" style="backgound-color:red"><h2>Next</h2></div>
+			<div id="b_step_vid_voice_rec" class="page_content_button_div" style="backgound-color:orange;width:50vw;">
+				<h2>I'm Ready!</h2></div>
+			<div id="b_step_int_questions" style="position: relative; display:inline-block;width:100%;line-height:30px;height:30px;margin: 0 auto;vertical-align:middle;text-align:middle;">
+            <img style="display:inline-block;position:static;width:28px; padding-right:5px;margin-bottom:-10px" src="img/main/question.png"/>
+            <p style="position:static;margin:0;text-align:center;font-size:15px;color:#848484;border-bottom:2px dotted #848484;display:inline-block">VIEW QUESTIONS</p>
+          </div>
+			<!--<div id="b_step_int_questions" class="page_content_button_div" style="backgound-color:yellow">
+				<img src="img/questions.png" class="button_pic" /></div>-->
+				<div id="b_step_take_pic" class="page_content_button_div" style="width:50vw"><h2>Take Picture</h2></div>
+				<!--<div id="b_step_take_pic" class="main_content_button_div">
+				  <img style="height:auto; width:auto;max-height:90px" src="img/main/camera.png" />
+				</div>-->
+			<!--<div id="b_step_take_pic" class="page_content_button_div" style="backgound-color:green">
+				<img src="img/camera.png" class="button_pic" /></div>-->
+				<div id="b_step_toolbox" class="page_content_button_div" style="backgound-color:red; width:50vw;"><h2>Let's Work!</h2></div>
+				<!--<div id="b_step_toolbox" class="main_content_button_div">
+				  <img style="height:auto; width:auto;max-height:90px" src="img/main/tools.png" />
+				</div>-->
+			<!--<div id="b_step_toolbox" class="page_content_button_div" style="backgound-color:blue">
+				<img src="img/toolbox.png" class="button_pic" /></div>-->
+			<div id="b_step_end" class="page_content_button_div" style="backgound-color:purple"><h2>Finish</h2></div>
+
+        </div>
+
+
+		<!-- Vid/Voice Record -->
+        <div id="vid_voice_rec" class="main_content_div">
+			<div id="voice_rec" class="main_content_div">
+				<div class = "stepPic"><img src="img/empathy/interview-animation/1.png" id="voice_rec_timer_pic" /></div>
+					<h1 class="main_content_header_text">Voice Record</h1>
+						<div id="start_voice_rec" class="button_record"></div>
+						<div id = "start_voice_rec_word" style="text-align:center"><h3>Record</h3></div>
+						<div class="main_content_text_div">
+							<p class="main_content_reg_text">
+							Click to start Voice Record
+							</p>
+						</div>
+			</div>
+
+			<div id="vid_rec" class="main_content_div">
+				<div class = "stepPic"><img src="img/empathy/interview-animation/1.png" /></div>
+					<h1 class="main_content_header_text">Video Record</h1>
+						<div class="main_content_text_div">
+							<p class="main_content_reg_text">
+							Click to start Video Record
+							</p>
+							<div id="start_vid_rec" class="button_record"></div>
+						</div>
+			</div>
+
+			<div id="b_step_time_up" class="page_content_button_div" style="backgound-color:red"><h2>Time's Up!</h2></div>
+			<div style="height:30px; width:80%; margin:0 auto">
+				<div id="b_step_vid_rec" class="main_content_button_div" style="margin-right:10%">
+				  <img style="height:auto; width:auto;max-height:80px" src="img/main/video.png" />
+				</div>
+				<div id="b_step_voice_rec" class="main_content_button_div">
+				  <img style="height:auto; width:auto;max-height:80px" src="img/main/voice.png" />
+				</div>
+			</div>
+			<div id="b_step_int_questions_2" style="position: static; display:inline-block;width:100%;line-height:30px;height:30px;margin: 0 auto;vertical-align:middle;text-align:middle;margin-top:-15%;">
+            <img style="display:inline-block;position:static;width:28px; padding-right:5px;margin-bottom:-10px" src="img/main/question.png"/>
+            <p style="position:static;margin:0;text-align:center;font-size:15px;color:#848484;border-bottom:2px dotted #848484;display:inline-block">VIEW QUESTIONS</p>
+          </div>
+			<!--<div id="b_step_int_questions_2">
+				View Questions
+			</div>-->
+			<!--<div id="b_step_vid_rec" class="page_content_button_div" style="backgound-color:orange">
+				<img src="img/video.png" class="button_pic" /></div>
+            <div id="b_step_voice_rec" class="page_content_button_div" style="backgound-color:green">
+				<img src="img/voice.png" class="button_pic" /></div>
+			<div id="b_step_int_questions_2" class="page_content_button_div" style="backgound-color:yellow">
+				<img src="img/questions.png" class="button_pic" /></div>-->
+        </div>
+
+
+		<!-- Toolbox -->
+		<div id="tool_box" class="main_content_div">
+			<h2 class="screen-title">Toolbox</h2>
+			<div class="screen-content">
+				<ul id = "toolbox-list" class="toolbox">
+				</ul>
+			</div>
+            <div id="b_toolbox_done" class="page_content_button_div"><h2>Tool Done/Time's Up</h2></div>
+        </div>
+
+		<!-- Photo Capture -->
+        <div id="photo_capture" class="main_content_div">
+			<div id="pic_page" class="main_content_div">
+				<div class = "stepPic"><img src="img/empathy/tool/2.png" id="photo_capture_pic"/></div>
+					<h1 class="main_content_header_text" id="photo_capture_title">Pictures</h1>
+						<div class="main_content_text_div">
+							<p class="main_content_reg_text">
+							Remember to take a picture of any notes you took or any tools you used for this step so far! You can take as many pictures as you need by clicking the "take picture" button.
+							</p>
+						</div>
+						<div class="pic_thumbnails">
+
+						</div>
+			</div>
+
+
+			<!--<div id="b_take_pic" class="page_content_button_div"><img src="img/camera.png" class="button_pic" /></div>-->
+			<div id="b_take_pic" class="page_content_button_div" style="width:50vw"><h2>Take Picture</h2></div>
+			<div id="b_pic_next" class="page_content_button_div"><h2>Next Step</h2></div>
+        </div>
+
+		<div style="display:none">
+            <div id="circle-one" class="circle">1</div>
+            <div id="bar-one" class="bar"></div>
+            <div id="circle-two" class="circle">2</div>
+            <div id="bar-two" class="bar"></div>
+            <div id="circle-three" class="circle">3</div>
+            <div id="bar-three" class="bar"></div>
+            <div id="circle-four" class="circle">4</div>
+            <div id="bar-four" class="bar"></div>
+            <div id="circle-five" class="circle">5</div>
+
+		</div>
+
+		<div id="step-bar-container" style="margin-left:auto">
+			<div>
+				<!--<img id="time-icon" src="img/hourglass.png" />-->
+				<img id="time-icon" src="img/main/timer-inactive.png" />
+				<h1 id="step_time_limit"> CurrTime </h1>
+			</div>
+		</div>
+
+
+</div>
+
+        <!--
+        **
+        ** Put all div's that do not follow the "main" flow of the application below.
+        ** The div's below are "special" cases.
+        **
+        -->
+
+
+        <!--
+            Throws images when showing the summary for the project.
+        -->
+        <div id="summary">
+          <div id="summary-content">
+            <audio id='summary-audio' src="" controls preload="auto" autoplay></audio>
+            <video id="summary-video" src="" autobuffer controls autoplay></video>
+            <div id="summary-filler"></div>
+            <img id="summary-img"/>
+            <div id = "summary-p"></div>
+            <div id='transitionScreen'>
+              <img id='transitionImg' src='img\v4\test\icon.png'\>
+              <h2 id='transitionName'></h2>
+            </div>
+          </div>
+        </div>
+
+        <div id="overlay_whatis_container">
+          <div id="whatis_content_container">
+            <h2 style='margin:0; color: #898989'>Dino Think</h2> is a fun application that guides the user through the Design Thinking process. The Design Thinking process is a process for rapid prototyping that helps users pinpoint and solve problems. This is done by guiding users through timed steps that are built to keep users in a quick thinking intuitive state of mind. Creativity is encouraged no matter how far-fetched, unbelievable, crazy, ridiculous, or awesome it may be!
+          </div>
+          <div id='whatis_button_close'>CLOSE</div>
+        </div>
+
+        <script type="text/javascript" src="js/globals.js"></script>
+        <script type="text/javascript" src="js/ez.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/animate.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/file.js"></script>
+        <script type="text/javascript" src="js/flow.js"></script>
+        <script type="text/javascript" src="js/swipe.js"></script>
+        <script type="text/javascript" src="js/summary.js"></script>
+		<script type="text/javascript" src="js/photo_capture.js"></script>
+		<script type="text/javascript" src="js/voice_capture.js"></script>
+		<script type="text/javascript" src="js/video_capture.js"></script>
+		<script type="text/javascript" src="js/timer.js"></script>
+		<script type="text/javascript" src="js/toolbox.js"></script>
+    <script type="text/javascript" src="js/nextstep.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,102 @@
+#project_selection {
+  font-family:'ralewaylight','HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    /* some styles to position the modal at the center of the page */
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+    line-height: 40%;
+    height: 60%;
+    background-color: #ffffff;
+    text-align: top;
+    border-radius: 1px;
+    min-height:300px;
+	display: none;
+	
+    /* needed styles for the overlay */
+    z-index: 2; /* keep on top of other elements on the page */
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+}
+
+#open_projectdiv {
+  position: relative;
+  text-align: left;
+  top:0%;
+  width: 100%;
+  height: 12.5%;
+  color: #ffffff;
+  background-color: #5bc0d8;
+  line-height: 10%;
+  font-size: 4.5vw;
+  vertical-align: middle;
+}
+
+#projects_container {
+  position: relative;
+  width: 90%;
+  height: 65%;
+  margin: 2.5% auto;
+  overflow: auto;
+}
+
+#open_projectdiv > p {
+  display: table-cell;
+  height: 40px;
+  vertical-align: middle;
+  font-size: 4.5vw;
+}
+
+#open_project_exit {
+  display: inline-block;
+  position: fixed;
+  font-size: 6vw;
+  font-weight: bold;
+  border: 0.1px solid #0f9eda;
+  vertical-align: middle;
+  color: white;
+  right: 8.5%;
+  line-height: 35px;
+  margin-top: 3px;
+}
+
+#spacer {
+  display: table-cell;
+  width: 63.5%;
+}
+
+.projectdiv {
+  position: static;
+  color: #848484;
+  height: 35px;
+  line-height: 35px;
+  width: 90%;
+  border-bottom: 1px solid #848484;
+  margin: 1px auto;
+}
+
+#select_project {
+  position: relative;
+  height: 4px;
+  width: 100px;
+  margin: 0 auto;
+  background-color: #ea6868;
+  border-radius: 9px;
+  border: 1px solid #ea6868;
+  box-shadow: 0px 4px 0px -1px #ce5f5f;
+  vertical-align: middle;
+}
+
+#op_OK {
+  position: static;
+  height: 45px;
+  width: 100px;
+  margin: 0 auto;
+  background-color: #ea6868;
+  border-radius: 9px;
+  box-shadow: 0px 4px 0px -1px #ce5f5f;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  line-height: 45px;
+  font-size: 15px;
+}

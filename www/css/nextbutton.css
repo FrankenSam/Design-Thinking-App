@@ -1,0 +1,43 @@
+#next-button-bottomflap {
+  display:none;
+  position: fixed;
+  height: 0;
+  width: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 0vw solid transparent;
+	border-left: 25vw solid transparent;
+	border-bottom: 25vw solid #d8d1bf;
+  z-index: 1;
+}
+
+#next-button {
+  display:none;
+  position: fixed;
+  height: 25vw;
+  width: 25vw;
+  bottom: 0;
+  right: 0;
+  background-color: #d1c6ae;
+  z-index: 1;
+}
+
+#next-arrow-triangle {
+  position: fixed;
+  right: 10.5vw;
+  margin-top:2vw;
+  width: 0;
+	height: 0;
+	border-top: 5vw solid transparent;
+	border-bottom: 5vw solid transparent;
+	border-left: 5vw solid #35b7e5;
+}
+
+#next-arrow-box {
+  position: fixed;
+  height:4vw;
+  width:7vw;
+  margin-left: 3vw;
+  margin-top: 4.8vw;
+  background-color: #35b7e5;
+}

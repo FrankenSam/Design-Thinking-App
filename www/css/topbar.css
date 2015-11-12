@@ -1,0 +1,37 @@
+#topbar {
+  background-color: #35b7e5;
+  display:none;
+  height: 17vh;
+  width: 100%;
+}
+
+#headerbar {
+  width: 85vw;
+  height: 12.5vw;
+  margin: 0 auto;
+  padding-top: 2vh;
+}
+
+.headerbarcontent {
+  display:none;
+  position: static;
+  width: 65vw;
+  margin: 0 auto;
+  color: white;
+  font-size: 6vw;
+  text-align: center;
+  font-family: ralewaysemibold;
+  font-weight:bold;
+  letter-spacing:0.05em;
+}
+
+.headerbarcontent img {
+  position: static;
+  max-height: 4vh;
+  max-width:12vw;
+}
+
+.headerbarcontent div {
+  position: static;
+  margin-left: 2vw;
+}
